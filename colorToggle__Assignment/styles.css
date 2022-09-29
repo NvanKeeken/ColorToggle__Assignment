@@ -1,0 +1,87 @@
+body {
+  font-family: sans-serif;
+  background-color: lightgrey;
+}
+/* Nav-menu */
+.menu {
+  width: fit-content;
+}
+
+.menu__button {
+  width: 100px;
+  height: 100px;
+  background-image: url(hamburgerMenu.png);
+  background-position: center;
+  background-size: 100px;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+input {
+  position: absolute;
+  right: 70px;
+}
+
+.menu__colors {
+  list-style: none;
+  padding-inline-start: 0px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 200px;
+  visibility: hidden;
+  margin-block-start: 0;
+  transition: transform 0.75s ease-out;
+  transform: translateX(-500px);
+}
+
+.menu__colors li {
+  border: 2px solid lightgrey;
+  padding: 10px 30px;
+  text-align: start;
+}
+
+/*Bonus: open/closing menu*/
+.menu__colorsOpen {
+  visibility: visible;
+  transform: translateX(0px);
+}
+.menu__colorsClose {
+  transform: translateX(-500px);
+}
+
+/* List Items colorbackground*/
+.color__home {
+  background-color: lightgrey;
+}
+.color__red {
+  background-color: red;
+}
+.color__orange {
+  background-color: orange;
+}
+.color__purple {
+  background-color: purple;
+}
+.color__green {
+  background-color: green;
+}
+
+/* background colors*/
+.grey-background {
+  background-color: lightgrey;
+}
+.red-background {
+  background-color: red;
+}
+.orange-background {
+  background-color: orange;
+}
+.purple-background {
+  background-color: purple;
+}
+.green-background {
+  background-color: green;
+}
